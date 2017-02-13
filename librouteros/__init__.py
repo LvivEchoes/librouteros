@@ -6,7 +6,7 @@ from binascii import unhexlify, hexlify
 from hashlib import md5
 try:
     from collections import ChainMap
-except:
+except ImportError:
     from chainmap import ChainMap
 
 from librouteros.exceptions import TrapError, FatalError, ConnectionError, MultiTrapError
